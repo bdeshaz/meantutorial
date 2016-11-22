@@ -21,7 +21,7 @@ var MessageComponent = (function () {
 MessageComponent = __decorate([
     core_1.Component({
         selector: 'app-message',
-        templateUrl: "./message.component.html",
+        template: "\n    <article class=\"panel panel-default\">\n        <div class=\"panel-body\">\n            {{ message.content }}\n        </div>\n        <footer class=\"panel-footer\">\n            <div class=\"author\">\n                {{ message.author }}\n            </div>\n            <div class=\"config\">\n                <a href=\"#\">Edit</a>\n                <a href=\"#\">Delete</a>\n            </div>\n        </footer>\n    </article>\n    ",
         styles: ["\n        .author {\n            display: inline-block;\n            font-style: italic;\n            font-size: 12px;\n            width: 80%;\n        }\n        .config {\n            display: inline-block;\n            text-align: right;\n            font-size: 12px;\n            width: 19%;\n        }\n        "]
     }),
     __metadata("design:paramtypes", [])
